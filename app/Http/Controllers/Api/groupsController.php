@@ -20,7 +20,7 @@ class groupsController extends Controller
 
         // $countGroup = Friends::select(groups::raw('groups_id, count(id) as total'))->groupby('groups_id')->orderby('nama', 'asc')->get();
 
-        return view('groups.index', compact('groups'), );
+        return view('groups.index', compact('groups'),);
     }
 
     /**

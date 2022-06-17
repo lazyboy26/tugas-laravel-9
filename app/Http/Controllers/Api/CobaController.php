@@ -49,7 +49,7 @@ class CobaController extends Controller
             'groups_id' => $request->groups_id,
         ]);
 
-        if($friends){
+        if ($friends) {
             return response()->json(
                 [
                     'success' => true,
@@ -58,7 +58,7 @@ class CobaController extends Controller
                 ],
                 200
             );
-        }else{
+        } else {
             return response()->json(
                 [
                     'success' => false,
@@ -68,7 +68,6 @@ class CobaController extends Controller
                 400
             );
         }
-
     }
 
     /**
