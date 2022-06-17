@@ -18,7 +18,7 @@ class CobaController extends Controller
     {
         $groups = groups::all();
         $groups->toArray();
-        return view('friends.create',['groups' => $groups]);
+        return view('friends.create', ['groups' => $groups]);
     }
 
     public function store(Request $request)
@@ -77,5 +77,4 @@ class CobaController extends Controller
         Friends::find($id)->delete();
         return redirect('/');
     }
-
 }
